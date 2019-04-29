@@ -14,7 +14,7 @@
 #                                                             - Michael Goodwin
 
 - name: Apply the Rocket.Chat role to all chat_servers
-  hosts: "{{ host_name | default('chat_servers') }}"
+  hosts: "{{ chat_servers }}"
   become: yes
 
   vars:
